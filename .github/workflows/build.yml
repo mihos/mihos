@@ -35,6 +35,6 @@ jobs:
           git add .
           git diff
           git config --global user.email "ktauchathuranga@gmail.com"
-          git config --global user.name "ktauchathuranga"
+          git config --global user.name "Ashen Chathuranga"
           git commit -m "Updated README" -a || echo "No changes to commit"
           git push
