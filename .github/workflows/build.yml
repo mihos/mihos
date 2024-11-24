@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: '3.8'
       - name: Configure pip cache
-        uses: actions/cache@v4
+        uses: actions/cache@v2
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/cache/requirements.txt') }}
@@ -35,6 +35,6 @@ jobs:
           git add .
           git diff
           git config --global user.email "ktauchathuranga@gmail.com"
-          git config --global user.name "Ashen Chathuranga"
+          git config --global user.name "ktauchathuranga"
           git commit -m "Updated README" -a || echo "No changes to commit"
           git push
